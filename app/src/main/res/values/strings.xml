@@ -10,4 +10,6 @@
     <string name="pref_sort_order_key">sortOrder</string>
     <string name="pref_popular">Most Popular</string>
     <string name="pref_highest_rated">Highest Rated</string>
+    <string name="text_bawah"><![CDATA[>A place for you to get know about the latest movies info]]></string>
+    <string name="image_app_desc">An Image for Splash Screen</string>
 </resources>
