@@ -12,6 +12,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.Target;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
@@ -41,8 +42,7 @@ public class DetailActivity extends AppCompatActivity {
             String stringOverview = getIntent().getExtras().getString("overview");
             String rating = getIntent().getExtras().getString("vote_average");
             String dateRelease = getIntent().getExtras().getString("release_date");
-            Glide.with(this).load(thumbnail)
-                    .placeholder(R.drawable.loading_image).into(imageView);
+            Glide.with(this).load(thumbnail).into(imageView);
             movieName.setText(movieTitle);
             overview.setText(stringOverview);
             userRating.setText(rating);

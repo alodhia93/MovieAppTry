@@ -21,20 +21,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/movie_title"
+                android:textColor="@color/black"
                 android:layout_marginStart="@dimen/layout_margin_left"
                 android:text="@string/movie_title"
                 android:textAlignment="center"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:textSize="25sp" />
+
             <TextView
+                android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/title"
                 android:layout_marginStart="@dimen/layout_margin_left"
                 android:layout_marginTop="@dimen/layout_margin_top"
-                android:textSize="20sp"
-                android:padding="@dimen/padding_layout" />
+                android:padding="@dimen/padding_layout"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -43,6 +47,7 @@
                 android:layout_marginStart="@dimen/layout_margin_left"
                 android:text="@string/overview"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:layout_marginTop="@dimen/layout_margin_top"
                 android:textStyle="bold"
                 android:textSize="20sp" />
@@ -51,6 +56,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/overview_synopsis"
+                android:textColor="@color/black"
+                android:textAlignment="center"
                 android:layout_marginStart="@dimen/layout_margin_left"
                 android:padding="@dimen/padding_layout"
                 android:layout_marginTop="@dimen/layout_margin_top"
@@ -64,15 +71,18 @@
                 android:text="@string/rating"
                 android:textAlignment="center"
                 android:layout_marginTop="@dimen/layout_margin_top"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:id="@+id/user_rating"
                 android:layout_marginStart="@dimen/layout_margin_left"
                 android:padding="@dimen/padding_layout"
+                android:textColor="@color/black"
                 android:layout_marginTop="@dimen/layout_margin_top"
                 android:textSize="20sp" />
 
@@ -81,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/release_date"
                 android:layout_marginStart="@dimen/layout_margin_left"
+                android:textColor="@color/black"
                 android:text="@string/release_date"
                 android:textAlignment="center"
                 android:layout_marginTop="@dimen/layout_margin_top"
@@ -90,6 +101,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textAlignment="center"
                 android:id="@+id/release"
                 android:layout_marginStart="@dimen/layout_margin_left"
                 android:padding="@dimen/padding_layout"
