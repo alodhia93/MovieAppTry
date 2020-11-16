@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.GlideBuilder;
 import com.example.movieapptry.DetailActivity;
+import com.example.movieapptry.GlideApp;
 import com.example.movieapptry.R;
 import com.example.movieapptry.model.Movie;
 
@@ -33,7 +34,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.movie_card, viewGroup, false);
-
         return new MyViewHolder(view);
     }
 
@@ -42,7 +42,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
         viewHolder.title.setText(movieList.get(i).getOriginalTitle());
         String vote = Double.toString(movieList.get(i).getVoteAverage());
         viewHolder.user_rating.setText(vote);
-        Glide.with(mContext).load(movieList.get(i).getPosterPath()).into(viewHolder.thumbnail);
+        GlideApp.with(mContext).load(movieList.get(i).getPosterPath()).into(viewHolder.thumbnail);
     }
 
 

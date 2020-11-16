@@ -32,11 +32,8 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private MoviesAdapter moviesAdapter;
-    private List<Movie> movieList;
     ProgressDialog progressDialog;
     private SwipeRefreshLayout swipeContainer;
-    public static final String LOG_TAG = MoviesAdapter.class.getName();
     public static final String API_KEY = "0dde3e9896a8c299d142e214fcb636f8";
 
     @Override
@@ -71,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
         progressDialog.show();
 
         recyclerView = findViewById(R.id.recycler_view);
-        movieList = new ArrayList<>();
-        moviesAdapter = new MoviesAdapter(this, movieList);
+        List<Movie> movieList = new ArrayList<>();
+        MoviesAdapter moviesAdapter = new MoviesAdapter(this, movieList);
 
         if (getActivity().getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
             recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
@@ -94,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
             Client client = new Client();
-            Service apiService = client.getClient().create(Service.class);
+            Service apiService = Client.getClient().create(Service.class);
             Call<MovieResponse> call = apiService.getPopularMovies(API_KEY);
             call.enqueue(new Callback<MovieResponse>() {
                 @Override

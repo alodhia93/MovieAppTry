@@ -12,4 +12,5 @@
     <string name="pref_highest_rated">Highest Rated</string>
     <string name="text_bawah"><![CDATA[>A place for you to get know about the latest movies info]]></string>
     <string name="image_app_desc">An Image for Splash Screen</string>
+    <string name="content_description_thumbnail">Movie Thumbnail</string>
 </resources>

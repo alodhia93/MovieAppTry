@@ -42,7 +42,7 @@ public class DetailActivity extends AppCompatActivity {
             String stringOverview = getIntent().getExtras().getString("overview");
             String rating = getIntent().getExtras().getString("vote_average");
             String dateRelease = getIntent().getExtras().getString("release_date");
-            Glide.with(this).load(thumbnail).into(imageView);
+            GlideApp.with(this).load(thumbnail).into(imageView);
             movieName.setText(movieTitle);
             overview.setText(stringOverview);
             userRating.setText(rating);

@@ -53,10 +53,10 @@ public class Movie {
         this.voteAverage = voteAverage;
     }
 
-    String baseImageUrl = "https://image.tmdb.org/t/p/w500";
+    String baseImageUrl = "https://image.tmdb.org/t/p/w500/";
 
     public String getPosterPath(){
-        return "https://image.tmdb.org/t/p/w500" + posterPath;
+        return "https://image.tmdb.org/t/p/w500/" + posterPath;
     }
 
     public void setPosterPath(String posterPath) {
