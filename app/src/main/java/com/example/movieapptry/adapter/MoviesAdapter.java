@@ -12,8 +12,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.GlideBuilder;
 import com.example.movieapptry.DetailActivity;
 import com.example.movieapptry.GlideApp;
 import com.example.movieapptry.R;
@@ -22,8 +20,8 @@ import com.example.movieapptry.model.Movie;
 import java.util.List;
 
 public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHolder> {
-    private Context mContext;
-    private List<Movie> movieList;
+    private final Context mContext;
+    private final List<Movie> movieList;
 
     public MoviesAdapter(Context mContext, List<Movie> movieList) {
         this.mContext = mContext;

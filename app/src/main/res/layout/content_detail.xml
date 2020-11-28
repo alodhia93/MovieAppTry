@@ -108,6 +108,23 @@
                 android:padding="@dimen/padding_layout"
                 android:layout_marginTop="@dimen/layout_margin_top"
                 android:textSize="20sp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                    android:id="@+id/favorite_button"
+                    android:layout_width="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="35dp"
+                    android:background="@color/teal_200"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
